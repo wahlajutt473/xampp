@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body style="color: white;">
+ <style>
+    body 
+    {
+        background-image: url('image2.jpg');
+    }
+ </style>
+
+    <h2>Contact Us</h2>
+
+    <form action="backend.php" method="post" >
+        <fieldset style="width: min-content;">
+            <legend>Enter details</legend>
+        <label for="text">Name</label>
+        <br>
+        <input type="text" name="name" id="text" required>
+        <br>
+
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="message">Message</label><br>
+        <textarea name="message" rows="5" cols="30" id="message" required></textarea><br>
+
+        <input type="submit" value="Submit Now">
+        </fieldset>
+    </form>
+    <div>
+        <a href="index.html">
+         <input type="button" value="Home">
+         </a>
+    </div>
+    <br>
+    <fieldset style="width: max-content;">
+    <legend>Contact_Directly</legend>
+
+    <p>
+         <a href="mailto:wahlajutt473@gmail.com">
+            <input type="button" value="📧 Email" style="color: red;"> </a><br>
+       <a href="https://wa.me/3167544394">
+            <input type="button" value="💬 whatsApp" style="color: rgb(0, 245, 37);"> </a>
+    </p>
+    </fieldset>
+</body>
+</html>

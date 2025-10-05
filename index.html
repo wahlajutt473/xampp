@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup - Mine Work</title>
+  <style>
+    body {
+      background-image: url('image2.jpg');
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    form {
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+    }
+    fieldset {
+      border: 2px solid white;
+      padding: 10px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 6px;
+      margin: 4px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    input[type="submit"], input[type="reset"], input[type="button"] {
+      width: auto;
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin: 5px;
+    }
+    input[type="button"]:hover, input[type="submit"]:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Please Signup Here</h1>
+  </header>
+
+  <form action="backend.php" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="name">Name:</label>
+      <input type="text" name="myname" id="name" required>
+
+      <label for="role">Role:</label>
+      <input type="text" name="myrole" id="role" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="myemail" id="email" required>
+
+      <label for="dateofbirth">Date of Birth:</label>
+      <input type="date" name="mydateofbirth" id="dateofbirth" required>
+
+      <label for="bonus">Bonus:</label>
+      <input type="number" name="mybonus" id="bonus" min="0">
+
+      <label for="eligible">Are you eligible?</label>
+      <input type="checkbox" name="myeligibility" id="eligible">
+
+      <div>
+        <p>Gender:</p>
+        <label><input type="radio" name="mygender" value="male" required> Male</label>
+        <label><input type="radio" name="mygender" value="female"> Female</label>
+        <label><input type="radio" name="mygender" value="other"> Other</label>
+      </div>
+
+      <label for="about">Write about yourself:</label>
+      <textarea name="mytext" id="about" cols="30" rows="5" placeholder="Tell us something about you..."></textarea>
+
+      <label for="car">Select Your Car:</label>
+      <select name="mycar" id="car">
+        <option value="ind">Indica</option>
+        <option value="swf">Swift</option>
+        <option value="coro">Corolla</option>
+        <option value="hond">Honda Civic</option>
+      </select>
+
+      <label for="Password">Enter your Password:</label>
+      <input type="password" name="Password" id="Password" required>
+
+      <label for="confirmpassword">Confirm Password:</label>
+      <input type="password" name="confirmpassword" id="confirmpassword" required>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Submit Now">
+    <input type="reset" value="Reset Now">
+
+    <br><br>
+    <a href="login.html"><input type="button" value="Log In"></a>
+  </form>
+
+  <br>
+  <video width="50%" height="50%" controls>
+    <source src="WhatsAppvideo.mp4" type="video/mp4">
+  </video>
+
+  <br><br>
+  <footer>
+    <a href="contact_us.html">
+      <input type="button" value="Contact Us">
+    </a>
+  </footer>
+</body>
+</html>
